@@ -1,0 +1,199 @@
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DAE3AB42-1261-4751-8A39-9381EC6AE95F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IntranetInstitucional_Capas.PresentacionWeb</RootNamespace>
+    <AssemblyName>IntranetInstitucional_Capas.PresentacionWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44399</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Sitio.master" />
+    <Content Include="Login.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="SinAcceso.aspx" />
+    <Content Include="Modulo02.aspx" />
+    <Content Include="Modulo02_Clase.aspx" />
+    <Content Include="Modulo02_Matriz.aspx" />
+    <Content Include="Modulo02_TomarAsistencia.aspx" />
+    <Content Include="Modulo02_MiAsistencia.aspx" />
+    <Content Include="Modulo02_DetalleCurso.aspx" />
+    <Content Include="Modulo02_Justificaciones.aspx" />
+    <Content Include="Modulo02_ReportesDpi.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sitio.master.cs">
+      <DependentUpon>Sitio.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitio.master.designer.cs">
+      <DependentUpon>Sitio.master</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SinAcceso.aspx.cs">
+      <DependentUpon>SinAcceso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SinAcceso.aspx.designer.cs">
+      <DependentUpon>SinAcceso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulo02.aspx.cs">
+      <DependentUpon>Modulo02.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulo02.aspx.designer.cs">
+      <DependentUpon>Modulo02.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulo02_Clase.aspx.cs">
+      <DependentUpon>Modulo02_Clase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulo02_Clase.aspx.designer.cs">
+      <DependentUpon>Modulo02_Clase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulo02_Matriz.aspx.cs">
+      <DependentUpon>Modulo02_Matriz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulo02_Matriz.aspx.designer.cs">
+      <DependentUpon>Modulo02_Matriz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulo02_TomarAsistencia.aspx.cs">
+      <DependentUpon>Modulo02_TomarAsistencia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulo02_TomarAsistencia.aspx.designer.cs">
+      <DependentUpon>Modulo02_TomarAsistencia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulo02_MiAsistencia.aspx.cs">
+      <DependentUpon>Modulo02_MiAsistencia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulo02_MiAsistencia.aspx.designer.cs">
+      <DependentUpon>Modulo02_MiAsistencia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulo02_DetalleCurso.aspx.cs">
+      <DependentUpon>Modulo02_DetalleCurso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulo02_DetalleCurso.aspx.designer.cs">
+      <DependentUpon>Modulo02_DetalleCurso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulo02_Justificaciones.aspx.cs">
+      <DependentUpon>Modulo02_Justificaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulo02_Justificaciones.aspx.designer.cs">
+      <DependentUpon>Modulo02_Justificaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulo02_ReportesDpi.aspx.cs">
+      <DependentUpon>Modulo02_ReportesDpi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulo02_ReportesDpi.aspx.designer.cs">
+      <DependentUpon>Modulo02_ReportesDpi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\SesionPagina.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Propiedades\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IntranetInstitucional_Capas.Entidades\IntranetInstitucional_Capas.Entidades.csproj">
+      <Project>{0B15F2E9-7B7D-4709-9D32-077F3133E151}</Project>
+      <Name>IntranetInstitucional_Capas.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IntranetInstitucional_Capas.LogicaNegocio\IntranetInstitucional_Capas.LogicaNegocio.csproj">
+      <Project>{0E7161B7-43A9-4FAE-B77E-687D82E2EBFF}</Project>
+      <Name>IntranetInstitucional_Capas.LogicaNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="App_Start\" />
+    <Folder Include="Propiedades\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>25960</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:5189/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

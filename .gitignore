@@ -1,0 +1,48 @@
+# Visual Studio / MSBuild
+.vs/
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+build/
+bld/
+[Ll]og/
+[Ll]ogs/
+
+# Archivos de usuario
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.userprefs
+*.csproj.user
+
+# NuGet / paquetes
+packages/
+*.nupkg
+*.snupkg
+
+# Resultados de pruebas y cobertura
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.coverage
+*.coveragexml
+
+# Temporales y del sistema
+*.tmp
+*.log
+*.bak
+*.cache
+Thumbs.db
+desktop.ini
+
+# Mono / Xamarin
+*.pidb
+*.mdb
+*.dll.mdb
+*.exe.mdb
+
+# IIS Express
+*.applicationhost.config
